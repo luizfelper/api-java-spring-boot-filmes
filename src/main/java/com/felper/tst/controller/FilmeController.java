@@ -20,7 +20,7 @@ import com.felper.tst.model.Filme;
 import com.felper.tst.repository.FilmeRepository;
 
 @RestController
-@RequestMapping("/filmess")
+@RequestMapping("/filmes")
 public class FilmeController {
 	
 	@Autowired
