@@ -31,6 +31,11 @@ public class FilmeController {
 		return filmeRepository.findAll();
 	};
 	
+	@GetMapping(value = "/{id}")
+	public Filme getFilme(@PathVariable Long id) {
+		return filmeRepository.findById(id).get();
+	}
+	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Filme addFilme(@RequestBody Filme filme) {
